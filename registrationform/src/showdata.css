@@ -1,0 +1,18 @@
+.submission {
+    border: 5px;
+    margin: 10px;
+    border-color: black;
+    background-color: yellow;
+}
+
+#dis{
+    text-align: center;
+}
+
+h1{
+        font-size: 50;
+}
+
+.submission h2{
+    text-align: center;
+}

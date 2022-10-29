@@ -1,0 +1,154 @@
+:root {
+	--c1: #374151;
+	--c2: #1F2937;
+	--c3: #111827;
+	--c4: #6B7280;
+	--c5: #EC4899;
+	--c6: #8B5CF6;
+	--c7: #EEE;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 1;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	background-color: var(--c2);
+	flex-direction: column;
+
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: auto;
+}
+
+header h1{ 
+	font-size: 2em;
+	font-weight: 300;
+	color: var(--c4);
+	margin: 2rem;
+}
+
+#new-task-form {
+	display: flex;;
+}
+
+input, button {
+	border: none;
+	background: none;
+}
+
+#new-task-input {
+	flex: 1 1 1%;
+	background-color: var(--c1);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--c7);
+	font-size: 1.25rem;
+}
+
+#new-task-input::placeholder {
+	color: var(--c4);
+}
+
+#new-task-submit {
+	-webkit-background-clip: text;
+	color: var(--c5);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--c5), var(--c6));
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 1%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 1.5rem;
+	font-weight: 200;
+	color: var(--c4);
+	margin-bottom: 1rem;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--c3);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 1%;
+}
+
+.task .content .text {
+	color: var(--c7);
+	font-size: 1em;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: var(--c5);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .edit {
+	-webkit-background-clip: text;
+	background-image: linear-gradient(to right, var(--c5), var(--c6));
+	-webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete {
+	color: crimson;
+}

@@ -1,0 +1,52 @@
+body{
+    background: #9f9191;
+}
+
+form{
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+table{
+    align-items: center;
+}
+
+.f1 {
+    margin: 10px;
+    text-align: left;
+    width: 210px;
+    color: rgb(15, 186, 186);
+    border: solid black 2px;
+}
+
+input[type="button"] {
+    background-color: rgb(199 191 173);
+    color: black;
+    border: solid black 2px;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+input[type="reset"]{
+    width: 100px; 
+    height: 40px;  
+}
+
+input[type="button"]:hover{
+    background-color: rgb(207, 206, 204);
+}
+
+input[type="text"] {
+    background-color: rgb(216, 197, 197);
+    border: solid black 2px;
+    width: 100%;
+    height: 30px;
+}
